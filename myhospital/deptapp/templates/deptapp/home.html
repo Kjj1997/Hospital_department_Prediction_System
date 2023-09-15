@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Your+Chosen+Font&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: lightpink; /* Add your desired background color here */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <h1>Welcome to Hospital Department Prediction</h1>
+        <p>Click the button below to predict the department:</p>
+        <a href="{% url 'visit_reason' %}" class="btn btn-primary">Predict Department</a>
+    </div>
+</body>
+</html>
